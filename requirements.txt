@@ -1,0 +1,4 @@
+fastapi==0.105.0
+pytailwindcss==0.2.0
+uvicorn[standard]==0.25.0
+Jinja2==3.1.2
