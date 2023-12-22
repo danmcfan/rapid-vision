@@ -1,0 +1,22 @@
+<div class="max-w-xs rounded-lg overflow-hidden shadow-lg m-4 bg-white border border-gray-300">
+    <img class="w-1/2 object-cover rounded-t-lg mx-auto mt-2" src="{{ dataset.thumbnail }}" alt="Dataset thumbnail">
+    <div class="px-6 py-4 text-center">
+        <div class="font-bold text-xl mb-2">{{ dataset.name }}</div>
+        <div class="flex justify-center space-x-4 mb-4">
+            <div class="bg-gray-200 text-gray-800 text-sm font-semibold px-4 py-2 rounded">
+                Images: {{ dataset.image_count }}
+            </div>
+            <div class="bg-gray-200 text-gray-800 text-sm font-semibold px-4 py-2 rounded">
+                Classes: {{ dataset.class_count }}
+            </div>
+        </div>
+        <div class="relative pt-1 pb-2">
+            <div class="overflow-hidden h-2 text-xs flex rounded bg-gray-200">
+                <div style="width:{{ dataset.progress }}%" class="h-2 rounded bg-blue-600"></div>
+            </div>
+            <div class="absolute right-0 mt-1 mr-2 text-xs text-gray-500">
+                {{ dataset.progress }}%
+            </div>
+        </div>
+    </div>
+</div>
